@@ -94,7 +94,9 @@ Linearization converts a complex ratio metric into a linear form that preserves 
 making it suitable for standard statistical tests
 
 Formula:
+
 $$Lin_u = total\_duration_u - \kappa * session\_count_u$$
+
 where:
 - $total\_duration_u$ - total time spent across all sessions of user u,
 - $\kappa$ - a coefficient chosen to minimize the variance of the new metric (typically estimated as the target 
@@ -123,7 +125,10 @@ CUPED (Controlled Experiment Using Pre-Experiment Data) is a variance reduction 
 It adjusts the target metric by removing the portion of its variance explained by correlated pre-experiment features.
 
 Formula:
+
 $$Y_{cuped}=Y−\theta(X−\overline{X})$$
+
+where:
 - Y - outcome measured during the experiment
 - X - pre-experiment data (a covariate)
 - $\theta$ - adjustment coefficient:
