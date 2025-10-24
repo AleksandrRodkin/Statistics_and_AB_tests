@@ -95,19 +95,19 @@ making it suitable for standard statistical tests
 
 Formula:
 
-$$Lin_u = total\_duration_u - \kappa * session\_count_u$$
+$$Lin_u = total\\_duration_u - \kappa * session\\_count_u$$
 
 where:
-- $total\_duration_u$ - total time spent across all sessions of user u,
+- $total\\_duration_u$ - total time spent across all sessions of user u,
 - $\kappa$ - a coefficient chosen to minimize the variance of the new metric (typically estimated as the target 
 - ratio metric computed on the control group),
-- $session\_count_u$ - number of sessions for user u.
+- $session\\_count_u$ - number of sessions for user u.
 
 The coefficient $\kappa$ is estimated using the control group and then applied to both groups.
 
 Procedure:
 
-- Compute $\kappa$ on the control group as the average ratio $total\_duration_u / session\_count_u$
+- Compute $\kappa$ on the control group as the average ratio $total\\_duration_u / session\\_count_u$
 - Apply this transformation to both groups.
 - Compare mean $Lin_u$ values between groups using standard t-tests or nonparametric tests.
 
