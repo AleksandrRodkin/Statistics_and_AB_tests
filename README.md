@@ -162,7 +162,6 @@ of means
 ## Conclusions
 
 - Bootstrap — easy to implement and statistically valid, but computationally heavy.
-- Bucket method — much faster and scalable, suitable for streaming or online analysis, but doesn’t support 
-- variance reduction.
+- Bucket method — much faster and scalable, suitable for streaming or online analysis, but doesn’t support variance reduction.
 - Linearization — converts ratio metrics into a form compatible with standard statistical tests.
 - CUPED — effectively reduces variance, improving test sensitivity without increasing sample size.
