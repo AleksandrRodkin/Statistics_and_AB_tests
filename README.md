@@ -1,4 +1,4 @@
-# A/B Test Analysis with Ratio Metrics
+# Analysis of Ratio Metrics in A/B Tests
 When running A/B tests we often deal with metrics that are expressed as a ratio of two quantities - for example, 
 the average session duration (total time / number of sessions) or CTR (clicks / views).
 
